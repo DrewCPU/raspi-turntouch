@@ -16,12 +16,12 @@ class WebhookController(BaseController):
     @classmethod
     def help(cls):
       return """
-Bash Module - Run commands in the shell
+Webhook Module - Call webhooks
 
 Usage:
 
 north_press:
   type: webhook
-  command: echo "Hello North"
+  command: https://address-of-your-webhook.com
 """
 
