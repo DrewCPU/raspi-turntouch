@@ -39,7 +39,18 @@ class TurnTouch(gatt.Device):
         b'\xfb\xff': 'West Hold',
         b'\xf7\x00': 'South Press',
         b'\x7f\x00': 'South Double',
-        b'\xf7\xff': 'South Hold'
+        b'\xf7\xff': 'South Hold',
+        b'\xf0\x00': 'All Press',
+        b'\xfc\x00': 'NotrhEast Press',
+        b'\xfa\x00': 'NorthWest Press',
+        b'\xf6\x00': 'NorthSouth Press',
+        b'\xf9\x00': 'EastWest Press',
+        b'\xf5\x00': 'NorthWest Press',
+        b'\xf3\x00': 'WestSouth Press',
+        b'\xf8\x00': 'NorthEastWest Press',
+        b'\xf4\x00': 'NorthEastSouth Press',
+        b'\xf2\x00': 'NorthWestSouth Press',
+        b'\xf1\x00': 'EastWestWouth Press'
     }
 
     button_presses = []
