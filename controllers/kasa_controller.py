@@ -11,8 +11,9 @@ class KasaController(BaseController):
 
     def perform(self, action):
         if action['action'] == 'toggle':
-           kasa --alias action['alias'] toggle
-           
+           self.log(subprocess.check_output('kasa --alias "' + action['alias'] + '" toggle',
+                                          shell=True
+            ).decode('utf-8').strip())
 
     @classmethod
     def help(cls):
